@@ -1,0 +1,22 @@
+.top-pv::before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.middle-pv-container {
+    background-image: url("../../../public/images/wallpaper.png");
+    background-position: center;
+    background-size: cover;
+}
+.glass-container{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+}

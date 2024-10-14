@@ -1,0 +1,47 @@
+.home{
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+.home-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100vh;
+    grid-template-areas: "aside pv";
+}
+.sidebar-section{
+    grid-area: aside;
+    height: 100%;
+    background-color: aqua;
+}
+.pv-section{
+    grid-area: pv;
+    height: 100%;
+    background-color:#1e7fff;
+}
+
+@media screen and (max-width : 1000px) {
+    .home-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh;
+        grid-template-areas: "aside";
+    }
+    .sidebar-section{
+        grid-area: aside;
+        height: 100%;
+        background-color: aqua;
+    }
+    .pv-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color:#1e7fff;
+        transform: translateX(100%);
+    }
+    .pv-section.open{
+        transform: translateX(0);
+    }
+}

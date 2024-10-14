@@ -1,0 +1,26 @@
+.loading3 {
+    background: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    overflow: hidden;
+}
+
+.loading3::before {
+    content: "";
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(117, 113, 113, 0.486);
+    top: -50%;
+    animation: 1s loading3 infinite;
+}
+
+@keyframes loading3 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
